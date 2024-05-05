@@ -9,7 +9,6 @@ django-extensions==3.2.3
 django-rest-framework-nested==0.0.1
 djangorestframework==3.14.0
 drf-nested-routers==0.93.5
-psycopg2==2.9.9
 psycopg2-binary==2.9.9
 pytz==2024.1
 sqlparse==0.5.0
