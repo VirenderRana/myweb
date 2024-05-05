@@ -1,10 +1,6 @@
 #!/bin/bash
-
-# Exit immediately if a command exits with a non-zero status.
 set -e
 
-# Install dependencies directly using the system Python.
-pip install -r requirements.txt
-
-# Collect static files without input.
-python manage.py collectstatic --noinput
+# Use the Python and Pip directly provided by the Vercel runtime environment.
+python3 -m pip install -r requirements.txt
+python3 manage.py collectstatic --noinput
