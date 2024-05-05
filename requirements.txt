@@ -2,12 +2,14 @@ asgiref==3.7.2
 cachetools==5.3.3
 certifi==2024.2.2
 charset-normalizer==3.3.2
-django==5.0.3
+Django==5.0.3
 django-cors-headers==4.3.1
 django-environ==0.11.2
 django-extensions==3.2.3
+django-rest-framework-nested==0.0.1
 djangorestframework==3.14.0
 drf-nested-routers==0.93.5
+psycopg2==2.9.9
 psycopg2-binary==2.9.9
 pytz==2024.1
 sqlparse==0.5.0

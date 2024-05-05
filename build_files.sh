@@ -1,17 +1,10 @@
 #!/bin/bash
 
-# Exit script if any command fails
+# Exit immediately if a command exits with a non-zero status.
 set -e
 
-# Create a Python virtual environment
-python3 -m venv env
+# Install dependencies directly using the system Python.
+pip install -r requirements.txt
 
-# Activate the virtual environment
-source env/bin/activate
-
-# Install Django and other dependencies from requirements.txt
-pip3 install django
-pip3 install -r requirements.txt
-
-# Run Django collectstatic
-python3 manage.py collectstatic --noinput
+# Collect static files without input.
+python manage.py collectstatic --noinput
